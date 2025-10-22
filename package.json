@@ -1,0 +1,15 @@
+{
+  "name": "shahalvi-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "api",
+    "admin"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --workspace=frontend run dev",
+    "dev:api": "npm --workspace=api run start:dev",
+    "dev:admin": "npm --workspace=admin run start",
+    "install:all": "npm install --workspaces"
+  }
+}
